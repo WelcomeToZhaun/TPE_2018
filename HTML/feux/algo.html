@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<title>TPE - feux intelligents</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="../index.html"><img src="logo.png" style="width:100%;transform:rotate(270deg);"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Présentation</p>
+  </a>
+  <a href="sandbox.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cubes w3-xxlarge"></i>
+    <p>Simulation</p>
+  </a>
+  <a href="algo.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>Algorithme</p>
+  </a>
+  <a href="algofull.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-code-o w3-xxlarge"></i>
+    <p>Algorithlme complet</p>
+  </a>
+  <a href="graphique.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-line-chart w3-xxlarge"></i>
+    <p>Graphique</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Présentation</a>
+    <a href="sandbox.html" class="w3-bar-item w3-button" style="width:25% !important">Simulation</a>
+    <a href="algo.html" class="w3-bar-item w3-button" style="width:25% !important">Algorithme</a>
+    <a href="algofull.html" class="w3-bar-item w3-button" style="width:25% !important">Algorithlme complet</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div id="main">
+  <img src="algo1.png" style="width:auto;float:left;height:100vh;">
+  <img src="algo2.png" style="width:auto;float:right;height:100vh;">
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

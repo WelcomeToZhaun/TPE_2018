@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<title>TPE - feux intelligents</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="../index.html"><img src="logo.png" style="width:100%;"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Présentation</p>
+  </a>
+  <a href="sandbox.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cubes w3-xxlarge"></i>
+    <p>Matériel</p>
+  </a>
+  <a href="algo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>Niveau d'automatisation</p>
+  </a>
+  <a href="algofull.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-code-o w3-xxlarge"></i>
+    <p>Algorithlme complet</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Présentation</a>
+    <a href="sandbox.html" class="w3-bar-item w3-button" style="width:25% !important">Simulation</a>
+    <a href="algo.html" class="w3-bar-item w3-button" style="width:25% !important">Niveau d'automatisation</a>
+    <a href="algofull.html" class="w3-bar-item w3-button" style="width:25% !important">Algorithlme complet</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" style="width:100%;height:100vh;padding:0!important;background-image: url('tdb.jpg');background-position: center;background-size: cover;" id="main">
+<div class="w3-circle" style="float:left;margin-left:130px;width:630px;height:800px;" onclick="document.getElementById('id01').style.display='block'"> &nbsp; </div>
+<div class="w3-circle" style="float:left;margin-left:10px;width:400px;height:400px;" onclick="document.getElementById('id02').style.display='block'"> &nbsp; </div>
+<div class="w3-circle" style="float:left;margin-left:10px;width:630px;height:800px;" onclick="document.getElementById('id03').style.display='block'"> &nbsp; </div>
+
+
+  <div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-red"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Voiture autonome</h2>
+      </header>
+      <div class="w3-container w3-white">
+        <p>Les voitures intelligentes sont l'avenir de la société.</p>
+        <p>Des capteurs sont ajoutés sur ces véhicules pour augmenter leur autonomie. Ainsi plus besoin de tenir le volant et de regarder la route.<br>Les capteurs, disposés partout sur la surface du véhicule, sont reliés à un ordinateur de bord qui s'occupe d'interpréter ces données pour réagir en conséquence.</p>
+      </div>
+      <footer class="w3-container w3-red">
+        <p>Concept</p>
+      </footer>
+  </div>
+</div>
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-blue"> 
+        <span onclick="document.getElementById('id02').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Mise en situation dans la vie réelle</h2>
+      </header>
+      <div class="w3-container w3-white">
+        <p><img src="voiture.jpg"></p>
+        <p>Dans une voiture il y a beaucoup d'angles morts que l'Homme ne peut pas voir. Les capteurs (radars/lidars...) se chargent de combler ce déficit.</p>
+      </div>
+      <footer class="w3-container w3-blue">
+        <p>Mise en situation</p>
+      </footer>
+  </div>
+</div>
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('id03').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Les avantages et les inconvénients</h2>
+      </header>
+      <div class="w3-container w3-white">
+        <p><b>Avantages :</b><br>- soulage l'utilisateur d'une fatigue optique<br>- réduit les accidents<br>- constante évolution du système</p>
+        <p><b>Inconvénients :</b><br>- risque de panne fréquentes ---> révision régulière<br>- risque de piratage informatique de la voiture<br>- plus couteux</p>
+      </div>
+      <footer class="w3-container w3-green">
+        <p>Avantage / Inconvénient</p>
+      </footer>
+  </div>
+</div>
+</div>
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

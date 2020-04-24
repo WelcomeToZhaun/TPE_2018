@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<title>TPE - feux intelligents</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="../index.html"><img src="logo.png" style="width:100%;"></a>
+  <!--<img src="cercle2.jpg" style="width:100%;">-->
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Présentation</p>
+  </a>
+  <a href="sandbox.html" class="w3-bar-item w3-button w3-padding-large w3-black"> 
+    <i class="fa fa-cubes w3-xxlarge"></i>
+    <p>Matériel</p>
+  </a>
+  <a href="algo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>Niveau d'automatisation</p>
+  </a>
+  <a href="algofull.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-code-o w3-xxlarge"></i>
+    <p>Algorithlme complet</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Présentation</a>
+    <a href="sandbox.html" class="w3-bar-item w3-button" style="width:25% !important">Simulation</a>
+    <a href="algo.html" class="w3-bar-item w3-button" style="width:25% !important">Niveau d'automatisation</a>
+    <a href="algofull.html" class="w3-bar-item w3-button" style="width:25% !important">Algorithlme complet</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main" style="height:100vh;">
+  
+<div class="w3-container">
+  <h2>Liste de matériel :</h2><br>
+  <ul class="w3-ul" style="width:50%;margin-left:calc(25% - 10px);">
+    <li class="w3-bar w3-pale-green" style="margin:10px;">
+      <img src="sensor/camera.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Camera</span><br>
+        <span>Deux objectifs l’un à côté de l’autre qui permet une vision en relief</span>
+      </div>
+    </li>
+
+    <li class="w3-bar w3-indigo" style="margin:10px;">
+      <img src="sensor/lidar.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Lidar</span><br>
+        <span>Émetteurs et récepteur laser = mesurer la distance</span>
+      </div>
+    </li>
+
+    <li class="w3-bar w3-red" style="margin:10px;">
+      <img src="sensor/radar.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Radar</span><br>
+        <span>Capteur et émetteurs d’ondes radios = mesurer la distance</span>
+      </div>
+    </li>
+	
+    <li class="w3-bar w3-light-blue" style="margin:10px;">
+      <img src="sensor/centrale inertie.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Centrale d'inertie</span><br>
+        <span>Permet de détecter les mouvements et position d’un objet </span>
+      </div>
+    </li>
+	
+    <li class="w3-bar w3-yellow" style="margin:10px;">
+      <img src="sensor/odometre.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Odometre</span><br>
+        <span>Mesure la vitesse et la distance parcourut par la voiture</span>
+		
+	<li class="w3-bar w3-green" style="margin:10px;">
+      <img src="sensor/systeme anti franchissement de ligne.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Systeme anti-franchissement de lignes</span><br>
+        <span>Détecter les lignes au sol </span>
+
+	<li class="w3-bar w3-blue" style="margin:10px;">
+      <img src="sensor/telemetre ultrasons.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Télémètre à ultrasons</span><br>
+        <span>Capteur et émetteurs d’ultrasons = mesurer la distance</span>	
+      </div>
+    </li>
+	
+	<li class="w3-bar w3-orange" style="margin:10px;">
+      <img src="sensor/gps.jpg" class="w3-bar-item w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">antenne GPS</span><br>
+        <span>GPS plus puissant et plus précis pour plus de fiabilité</span>	
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<!-- END PAGE CONTENT -->
+<script src="basic.js"></script>
+<script src="main.js"></script>
+</div>
+
+</body>
+</html>

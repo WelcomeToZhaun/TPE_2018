@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<title>TPE - feux intelligents</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="../index.html"><img src="logo.png" style="width:100%;transform:rotate(270deg);"></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Présentation</p>
+  </a>
+  <a href="sandbox.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cubes w3-xxlarge"></i>
+    <p>Simulation</p>
+  </a>
+  <a href="algo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>Algorithme</p>
+  </a>
+  <a href="algofull.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-code-o w3-xxlarge"></i>
+    <p>Algorithlme complet</p>
+  </a>
+  <a href="graphique.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-line-chart w3-xxlarge"></i>
+    <p>Graphique</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Présentation</a>
+    <a href="sandbox.html" class="w3-bar-item w3-button" style="width:25% !important">Simulation</a>
+    <a href="algo.html" class="w3-bar-item w3-button" style="width:25% !important">Algorithme</a>
+    <a href="algofull.html" class="w3-bar-item w3-button" style="width:25% !important">Algorithlme complet</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" style="width:100%;padding:0!important;" id="main">
+  <div class="w3-circle w3-red w3-display-container" style="margin-left:calc((100% - 33vh) / 2);margin-right:calc((100% - 33vh) / 2);width:33vh;height:33vh;" onclick="document.getElementById('id01').style.display='block'"><div class="w3-display-middle w3-xxxlarge">Concept</div></div>
+  <div class="w3-circle w3-yellow w3-display-container" style="margin-left:calc((100% - 33vh) / 2);margin-right:calc((100% - 33vh) / 2);width:33vh;height:33vh;" onclick="document.getElementById('id02').style.display='block'"><div class="w3-display-middle w3-xxxlarge">Mise en situation</div></div>
+  <div class="w3-circle w3-green w3-display-container" style="margin-left:calc((100% - 33vh) / 2);margin-right:calc((100% - 33vh) / 2);width:33vh;height:33vh;" onclick="document.getElementById('id03').style.display='block'"><div class="w3-display-middle w3-xxxlarge">Avantage / Inconvénient</div></div>
+
+  <div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-red"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Feux tricolores intelligents</h2>
+      </header>
+      <div class="w3-container w3-white">
+        <p>Ces feux utilisent un algorithme qui leur permet de "choisir" quand changer de couleur en fonction du nombre de voitures par files.</p>
+        <p>Grâce à leur intelligence artificielle, ils optimisent le temps d'attente des voitures et réduisent les risques de bouchons.</p>
+      </div>
+      <footer class="w3-container w3-red">
+        <p>Concept</p>
+      </footer>
+  </div>
+</div>
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-yellow"> 
+        <span onclick="document.getElementById('id02').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Carrefour sur une grande artère</h2>
+      </header>
+      <div class="w3-container w3-white">
+        <p>Les feux sont installés sur le croisement d'un boulevard et d'une ruelle.</p>
+        <p>Contrairement à un feu normal qui ferait patienter les voitures inutilement, le feu intelligent va faire passer le boulevard en continu, et ne l'interrompera que lorsque une voiture arrivera de la ruelle.</p>
+      </div>
+      <footer class="w3-container w3-yellow">
+        <p>Mise en situation</p>
+      </footer>
+  </div>
+</div>
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('id03').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Les avantages et les inconvénients</h2>
+      </header>
+      <div class="w3-container w3-white">
+        <p><b>Avantages :</b><br>- répartit équitablement le temps d'attente au feux<br>- réduit les embouteillages<br>- fluidifie le trafic en ville</p>
+        <p><b>Inconvénients :</b><br>- nécéssite une infrastructure capable de compter le nombre de voitures<br>- moins fiable<br>- plus couteux</p>
+      </div>
+      <footer class="w3-container w3-green">
+        <p>Avantage / Inconvénient</p>
+      </footer>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
